@@ -27,7 +27,7 @@ mongoose.connect(
   }
 );
 
-app.get("/", (req, res) => res.send("Hello from Refer-Earn!"));
+app.get("/api/hello", (req, res) => res.send("Hello from Refer-Earn!"));
 
 app.use("/api/users", userRoutes);
 app.use("/api/transactions", transactionRoutes);
